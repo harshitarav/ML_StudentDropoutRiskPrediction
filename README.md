@@ -58,6 +58,11 @@
 | **School Type (GP vs MS)** | Students in GP school have 51% lower dropout risk. |
 | **Alcohol Consumption (Weekday/Weekend)** | Moderate weekend consumption shows slightly lower dropout, possibly due to balanced social activity. |
 
+### **Correlation Analysis**
+- Computed correlation of numeric predictors with the dropout variable to identify strong linear relationships.  
+- Found that **low academic grades, frequent absences, and multiple failures** are the top positive correlates with dropout.  
+- **Higher study time and family relationship quality** show a strong negative correlation, indicating protective factors.  
+- These insights guided the selection of predictors for the logistic regression model.
+<img width="940" height="283" alt="image" src="https://github.com/user-attachments/assets/e9299d3c-82c4-4555-847e-307500dc319b" />
 
-
-
+## Model Building
