@@ -33,6 +33,31 @@
 - Encoded target variable:
   - 0 → Stayed  
   - 1 → Dropped Out
- 
+
+ ### **Univariate Analysis**
+- Examined the distribution of key numerical features such as **Age**, **Study Time**, **Number of Failures**, and **Absences**.  
+- Majority of students have:
+  - Study Time between 1–3 hours per day.  
+  - 0–1 course failures.  
+  - Less than 10 absences.  
+- Grades show a wide spread — indicating academic performance varies strongly across the population.  
+- Visualized individual features to identify skewness and potential outliers.
+
+ ### **Bivariate Analysis**
+- Compared categorical and numerical features against the **Dropped Out** target variable to uncover behavioral and academic patterns:  
+
+| Feature | Observation |
+|----------|--------------|
+| **Grade 1 (First-Term Marks)** | Lower early grades strongly correlate with higher dropout rates. |
+| **Number of Failures** | Each additional failure increases dropout likelihood by ~34%. |
+| **Study Time** | Students who dedicate more study hours are 19% less likely to drop out. |
+| **Wants Higher Education** | Students aspiring for higher studies have 54% lower dropout odds. |
+| **Relationship Status** | Students in a relationship are 93% more likely to drop out. |
+| **Family Relationship Quality** | Stronger family relationships reduce dropout by 15%. |
+| **Extra Paid Classes** | Surprisingly, students taking paid classes show 3x higher dropout odds, indicating underlying stress or burnout. |
+| **School Type (GP vs MS)** | Students in GP school have 51% lower dropout risk. |
+| **Alcohol Consumption (Weekday/Weekend)** | Moderate weekend consumption shows slightly lower dropout, possibly due to balanced social activity. |
+
+
 
 
