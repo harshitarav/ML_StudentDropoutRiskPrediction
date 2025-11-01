@@ -69,7 +69,6 @@ How can we proactively identify and support at-risk students to reduce dropouts 
 ## Model Building
 - **Train/Test Split:** Partitioned the dataset into training and test sets to evaluate out-of-sample performance.
 - **Baseline Models:** Trained two supervised classifiers — **Logistic Regression** (with regularization) and **Random Forest** — to predict dropout.
-- **Class Imbalance Treatment:** Used class-weighting / threshold tuning to prioritize **recall** on the positive class (Dropped Out), given the intervention use-case.
 - **Feature Engineering:** Created/standardized inputs from academic, behavioral, and family-context features; retained interpretable features to enable policy actions.
 - **Model Selection:** Chose **Logistic Regression** over **Random Forest** based on validation metrics — **Recall: 73% vs. 65%**, with **~90% accuracy** for both — favoring better generalization and transparent coefficients for stakeholder buy-in.
 - **Interpretability:** Interpreted **odds ratios** to identify key risk drivers (e.g., low first-period grades, study time, absences, higher-education aspiration, school type), enabling targeted early interventions.  
