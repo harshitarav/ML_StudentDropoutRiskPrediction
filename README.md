@@ -89,7 +89,27 @@ How can we proactively identify and support at-risk students to reduce dropouts 
 - 🏫 School Type Matters → GP School students perform better.
 - 💬 Relationship Status → Students in relationships have slightly higher risk.
 
+## Recommendations
+Based on the model insights and key dropout predictors, the following recommendations are proposed to reduce student dropout rates:
+1. **Monitor Early Academic Performance**  
+   - Implement continuous tracking systems for first-term grades and attendance.
+   - Flag students showing early academic decline for timely counseling or tutoring support.
 
+2. **Strengthen Academic Support Programs**  
+   - Introduce peer-mentoring, remedial classes, and adaptive learning plans for low performers.
+   - Ensure early interventions for students with repeated course failures or low study hours.
+
+3. **Promote Future Aspirations**  
+   - Encourage career awareness programs and higher education counseling.
+   - Strengthen teacher-student mentoring to build long-term academic goals.
+
+4. **Leverage Best Practices Across Schools**  
+   - Share successful retention initiatives between schools (e.g., study skill workshops, parental engagement models).
+   - Create data-driven dashboards to benchmark school-level dropout risks.
+
+5. **Address Social and Lifestyle Factors**  
+   - Conduct awareness campaigns on maintaining healthy social habits.
+   - Offer counseling on relationship management, stress handling, and alcohol moderation.
 
 
 
