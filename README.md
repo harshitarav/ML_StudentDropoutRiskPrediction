@@ -1,6 +1,7 @@
-<img width="668" height="373" alt="image" src="https://github.com/user-attachments/assets/eb6fb941-fc5a-4508-8cb3-fb47b7c585f3" />
-
 # Student Dropout Analysis and Risk Prediction
+
+## Problem Question
+How can we proactively identify and support at-risk students to reduce dropouts before they occur?
 
 ## Problem Statement 
 - Schools face rising student dropouts, driven by academic struggles, low engagement, and social or family pressures.
