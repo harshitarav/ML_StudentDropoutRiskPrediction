@@ -108,6 +108,8 @@ Key takeaways:
 - **Not wanting higher education**, **being in a relationship**, and **higher absences / behavioral factors** all push risk upward.
 - **School_GP = 1 (GP school)** is protective — students at GP schools are less likely to drop out.
 
+<img width="1228" height="1035" alt="image" src="https://github.com/user-attachments/assets/f34fb0c3-f080-4266-8806-e423a3fd4193" />
+
 **TOP 5 DRIVERS OF STUDENT DROPOUT**
 - 📚 Low Early Grades → Strongest predictor of dropout.
 - 📖 Extra Classes → Students taking extra classes still show high dropout risk.
