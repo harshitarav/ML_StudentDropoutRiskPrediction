@@ -94,6 +94,20 @@ How can we proactively identify and support at-risk students to reduce dropouts 
 
 <img width="734" height="395" alt="image" src="https://github.com/user-attachments/assets/345065e9-5cda-493f-9042-7dfd9261d7d2" />
 
+**Feature Impact (Odds Ratios from Logistic Regression)**
+
+The chart below shows the estimated odds ratio for each predictor in the logistic regression model.  
+- Values **> 1** increase the risk of dropping out.  
+- Values **< 1** decrease the risk of dropping out (protective factors).  
+- Error bars show 95% confidence intervals.
+<img width="1228" height="1035" alt="image" src="https://github.com/user-attachments/assets/32f1666e-0ea6-42fa-8b92-0925445dedef" />
+
+Key takeaways:
+- **Lower first-term grades (Grade_1)** are strongly associated with higher dropout risk (odds ratio well below 1 - as grades improve, risk drops sharply).
+- **Extra_Paid_Class** is linked to a much higher dropout risk, even after controlling for other factors.
+- **Not wanting higher education**, **being in a relationship**, and **higher absences / behavioral factors** all push risk upward.
+- **School_GP = 1 (GP school)** is protective — students at GP schools are less likely to drop out.
+
 **TOP 5 DRIVERS OF STUDENT DROPOUT**
 - 📚 Low Early Grades → Strongest predictor of dropout.
 - 📖 Extra Classes → Students taking extra classes still show high dropout risk.
