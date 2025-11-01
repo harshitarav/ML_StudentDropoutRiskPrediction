@@ -59,6 +59,11 @@ How can we proactively identify and support at-risk students to reduce dropouts 
 | **School Type (GP vs MS)** | Students in GP school have 51% lower dropout risk. |
 | **Alcohol Consumption (Weekday/Weekend)** | Moderate weekend consumption shows slightly lower dropout, possibly due to balanced social activity. |
 
+<img width="347" height="204" alt="Rplot" src="https://github.com/user-attachments/assets/a34fe019-85be-400b-8af2-fe5f39f7f06a" />
+
+<img width="831" height="497" alt="image" src="https://github.com/user-attachments/assets/cfb14e16-f862-4e13-888c-788b6748166a" />
+
+
 ### **Correlation Analysis**
 - Computed correlation of numeric predictors with the dropout variable to identify strong linear relationships.  
 - Found that **low academic grades, frequent absences, and multiple failures** are the top positive correlates with dropout.  
@@ -80,7 +85,8 @@ How can we proactively identify and support at-risk students to reduce dropouts 
 - Achieved **~90% accuracy** and **73% recall**, ensuring strong identification of at-risk students.
 - Visualized ROC curve and confusion matrix to validate model robustness.
 
-  
+<img width="734" height="395" alt="image" src="https://github.com/user-attachments/assets/345065e9-5cda-493f-9042-7dfd9261d7d2" />
+
 **TOP 5 DRIVERS OF STUDENT DROPOUT**
 - 📚 Low Early Grades → Strongest predictor of dropout.
 - 📖 Extra Classes → Students taking extra classes still show high dropout risk.
