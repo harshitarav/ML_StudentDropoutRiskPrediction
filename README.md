@@ -11,7 +11,6 @@ How can we proactively identify and support at-risk students to reduce dropouts 
 ## Dataset Overview
 - Source: Kaggle
 - Combination of numerical and categorical variables
-- The target variable churn is not balanced. i.e we can see the ratio of yes: no as - 73:27
 - Target Variable:
   - `0` → Stayed  
   - `1` → Dropped Out  
