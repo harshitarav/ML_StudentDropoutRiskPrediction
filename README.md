@@ -37,6 +37,7 @@ How can we proactively identify and support at-risk students to reduce dropouts 
   - Checked the class distribution of the target variable (Dropped_Out) and found an imbalance — around 15% of students dropped out versus 85% who continued.
   - Since the goal was to proactively identify at-risk students, Recall was prioritized over Accuracy during model evaluation to ensure more true dropouts were captured.
   - This guided later model tuning and threshold adjustment instead of synthetic oversampling.
+  - This ensured that more actual dropouts were captured while maintaining strong overall accuracy (~90%).
     <img width="693" height="583" alt="image" src="https://github.com/user-attachments/assets/d4cfa671-36ee-45cc-b123-30136053cac3" />
 
 
@@ -78,17 +79,18 @@ How can we proactively identify and support at-risk students to reduce dropouts 
 
 ## Model Building
 - **Train/Test Split:** Partitioned the dataset into training and test sets to evaluate out-of-sample performance.
-- **Baseline Models:** Trained two supervised classifiers — **Logistic Regression** (with regularization) and **Random Forest** — to predict dropout.
-- **Feature Engineering:** Created/standardized inputs from academic, behavioral, and family-context features; retained interpretable features to enable policy actions.
-- **Model Selection:** Chose **Logistic Regression** over **Random Forest** based on validation metrics — **Recall: 73% vs. 65%**, with **~90% accuracy** for both — favoring better generalization and transparent coefficients for stakeholder buy-in.
-- **Interpretability:** Interpreted **odds ratios** to identify key risk drivers (e.g., low first-period grades, study time, absences, higher-education aspiration, school type), enabling targeted early interventions.  
-- **Evaluation:** Reported Accuracy, Precision, Recall, and AUC on the test set; performed sensitivity checks on thresholds to balance false negatives/positives.
+- **Decision Threshold:** Tuned the classification threshold to **0.40** to improve recall on the minority (Dropped Out) class.
+- **Baseline Models:** Trained two supervised classifiers — **Logistic Regression** (binomial GLM with logit link) and **Random Forest** — to predict dropout.
+- **Feature Engineering:** Binary-encoded yes/no fields; cast nominal fields to factors; standardized numeric inputs; applied a log-transform to **Number_of_Absences** to reduce skew; removed unused ID/label columns.
+- **Model Selection:** Chose **Logistic Regression** over **Random Forest** based on validation metrics — **Recall: 73% vs. 65%** with **~90% accuracy** for both — prioritizing recall and model interpretability (odds ratios) for intervention planning.
+- **Interpretability:** Used **odds ratios** to identify key risk drivers (e.g., low first-period grades, study time, absences, higher-education aspiration, school type), enabling targeted early interventions.  
+- **Evaluation:** Reported **Accuracy, Precision, Recall, F1** (at the **0.40** threshold) and reviewed the confusion matrix; performed threshold sensitivity checks to balance false negatives/positives.
 - **Reproducibility:** Encapsulated preprocessing + model training into a pipeline for consistent re-runs and deployment readiness.
 
 ## Model Evaluation and Insights
 - Evaluated model using Accuracy, Precision, Recall, F1-score, and ROC-AUC metrics on the test set.
-- Achieved **~90% accuracy** and **73% recall**, ensuring strong identification of at-risk students.
-- Visualized ROC curve and confusion matrix to validate model robustness.
+- Achieved **~90% accuracy** and **73% recall** at the **0.40** decision threshold, ensuring strong identification of at-risk students.
+- Visualized the confusion matrix to validate robustness and threshold choice.
 
 <img width="734" height="395" alt="image" src="https://github.com/user-attachments/assets/345065e9-5cda-493f-9042-7dfd9261d7d2" />
 
