@@ -66,3 +66,30 @@
 <img width="940" height="283" alt="image" src="https://github.com/user-attachments/assets/e9299d3c-82c4-4555-847e-307500dc319b" />
 
 ## Model Building
+- **Train/Test Split:** Partitioned the dataset into training and test sets to evaluate out-of-sample performance.
+- **Baseline Models:** Trained two supervised classifiers — **Logistic Regression** (with regularization) and **Random Forest** — to predict dropout.
+- **Class Imbalance Treatment:** Used class-weighting / threshold tuning to prioritize **recall** on the positive class (Dropped Out), given the intervention use-case.
+- **Feature Engineering:** Created/standardized inputs from academic, behavioral, and family-context features; retained interpretable features to enable policy actions.
+- **Model Selection:** Chose **Logistic Regression** over **Random Forest** based on validation metrics — **Recall: 73% vs. 65%**, with **~90% accuracy** for both — favoring better generalization and transparent coefficients for stakeholder buy-in.
+- **Interpretability:** Interpreted **odds ratios** to identify key risk drivers (e.g., low first-period grades, study time, absences, higher-education aspiration, school type), enabling targeted early interventions.  
+- **Evaluation:** Reported Accuracy, Precision, Recall, and AUC on the test set; performed sensitivity checks on thresholds to balance false negatives/positives.
+- **Reproducibility:** Encapsulated preprocessing + model training into a pipeline for consistent re-runs and deployment readiness.
+
+## Model Evaluation and Insights
+- Evaluated model using Accuracy, Precision, Recall, F1-score, and ROC-AUC metrics on the test set.
+- Achieved **~90% accuracy** and **73% recall**, ensuring strong identification of at-risk students.
+- Visualized ROC curve and confusion matrix to validate model robustness.
+
+  
+**TOP 5 DRIVERS OF STUDENT DROPOUT**
+- 📚 Low Early Grades → Strongest predictor of dropout.
+- 📖 Extra Classes → Students taking extra classes still show high dropout risk.
+- 🎓 No Higher Education Aspiration → Doubles dropout risk.
+- 🏫 School Type Matters → GP School students perform better.
+- 💬 Relationship Status → Students in relationships have slightly higher risk.
+
+
+
+
+
+
