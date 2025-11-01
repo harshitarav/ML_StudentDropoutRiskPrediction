@@ -34,6 +34,10 @@ How can we proactively identify and support at-risk students to reduce dropouts 
 - Encoded target variable:
   - 0 → Stayed  
   - 1 → Dropped Out
+- **Target Variable Balance Check**
+  - Checked the class distribution of the target variable (Dropped_Out) and found an imbalance — around 15% of students dropped out versus 85% who continued.
+  - Since the goal was to proactively identify at-risk students, Recall was prioritized over Accuracy during model evaluation to ensure more true dropouts were captured.
+  - This guided later model tuning and threshold adjustment instead of synthetic oversampling.
 
  ### **Univariate Analysis**
 - Examined the distribution of key numerical features such as **Age**, **Study Time**, **Number of Failures**, and **Absences**.  
