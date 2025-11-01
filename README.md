@@ -108,7 +108,12 @@ Key takeaways:
 - **Not wanting higher education**, **being in a relationship**, and **higher absences / behavioral factors** all push risk upward.
 - **School_GP = 1 (GP school)** is protective — students at GP schools are less likely to drop out.
 
+### Random Forest (Qualitative Cross-Check)
+To validate the drivers identified by the logistic regression model, a Random Forest classifier was trained as a secondary model.  
+The feature importance results below confirm that **academic performance variables (Final_Grade, Grade_2, Grade_1)** overwhelmingly dominate dropout prediction, followed by **failures**, **higher-education aspiration**, and **school type (GP)**.
 <img width="1228" height="1035" alt="image" src="https://github.com/user-attachments/assets/f34fb0c3-f080-4266-8806-e423a3fd4193" />
+
+This cross-model consistency strengthens confidence in the findings — both models agree that **academic performance** and **student motivation** are the key levers for early intervention.
 
 **TOP 5 DRIVERS OF STUDENT DROPOUT**
 - 📚 Low Early Grades → Strongest predictor of dropout.
